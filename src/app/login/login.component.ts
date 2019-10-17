@@ -13,15 +13,23 @@ export class LoginComponent implements OnInit {
     alert("estamos iniciando sesion");
   }
 
-  iniciarSesion(email){
-    for (let index = 0; index < this.email.length; index++) {
+  iniciarSesion(email,password){
+    /*for (let index = 0; index < this.email.length; index++) {
       if (email=this.email[index]) {
         this.email.splice(index, 1)
+      }*/
+      if (email==this.email && password==this.password) {
+        email.value;
+        password.value;
+        alert("Haz iniciado Sesion correctamente");
+        
+      }else{
+        alert("Datos Erroneos")
       }
       
     }
 
-  }
+  
   addEmail(newEmail){
     this.email.push(newEmail.value);
     newEmail.value="";
