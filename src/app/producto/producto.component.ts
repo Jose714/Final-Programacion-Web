@@ -10,9 +10,15 @@ export class ProductoComponent implements OnInit {
   'Pulidora','Pistola de Calor','Tronzadoras','Sierras','Fresadoras','Ruteadoras'];
 
   addToCar(){
-    for (let index = 0; index < this.herramientasElectricas.length; index++) {
-    alert("Añadiendo al carrito"+this.herramientasElectricas[index]);
-    }
+    
+      if (this.herramientasElectricas[0]=="Destornilladores Electricos") {
+        document.write("Añadiendo al carrito"+this.herramientasElectricas[0]);
+      }else if(this.herramientasElectricas[1]=="Destornilladores Electricos"){
+        document.write("Añadiendo al carrito"+this.herramientasElectricas);
+        //console.log("Añadiendo al carrito"+this.herramientasElectricas);
+      }
+    
+    
   }
 
   constructor() { }

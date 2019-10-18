@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { UsersComponent } from './users/users.component';
 import { ProductoComponent } from './producto/producto.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductoComponent } from './producto/producto.component';
     LoginComponent,
     NavigationComponent,
     UsersComponent,
-    ProductoComponent
+    ProductoComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

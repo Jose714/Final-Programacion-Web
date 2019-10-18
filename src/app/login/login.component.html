@@ -19,7 +19,7 @@
                         <h1>Inicio de Sesión</h1>
                      </div>
                 </div>
-               <form (submit)="iniciarSesion(nameEmail,nPass)" name="Inicio de Sesión">
+               <form  name="Inicio de Sesión">
                        <div class="form-group">
                           <label for="exampleInputEmail1">Correo Electrónico</label>
                           <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo" #nameEmail>
@@ -29,7 +29,7 @@
                           <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Contraseña" #nPass>
                        </div>
                        <div class="col-md-12 text-center ">
-                          <button  class="btn btn-block mybtn btn-primary tx-tfm">Iniciar Sesión</button>
+                          <button  (click)="iniciarSesion(nameEmail,nPass)"class="btn btn-block mybtn btn-primary tx-tfm">Iniciar Sesión </button>
                        </div>
                     </form>
                   </div>
@@ -37,5 +37,6 @@
         </div>
     </div>
   </div>   
+  
   
 
