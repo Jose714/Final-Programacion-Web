@@ -1,3 +1,4 @@
+<br>
 <h1 style="text-align:center">Ingrese con estas credenciales</h1>
 <h6 style="text-align:center" *ngFor="let email of email">Email: {{email}}</h6>
 
@@ -15,20 +16,20 @@
  width="280"
  height="280"
  title="Logo ConstruTech">
-                 <font size="18">Inicio de Sesión</font>
+                        <p>Inicio de Sesión</p>
                      </div>
                 </div>
-               <form (submit)="addEmail(nameEmail)" name="Inicio de Sesión">
+               <form  name="Inicio de Sesión">
                        <div class="form-group">
                           <label for="exampleInputEmail1">Correo Electrónico</label>
                           <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo" #nameEmail>
                        </div>
                        <div class="form-group">
                           <label for="exampleInputEmail1">Contraseña</label>
-                          <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Contraseña" >
+                          <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Contraseña" #nPass>
                        </div>
                        <div class="col-md-12 text-center ">
-                          <button  class="btn btn-block mybtn btn-primary tx-tfm">Iniciar Sesión</button>
+                          <button  (click)="iniciarSesion(nameEmail,nPass)"class="btn btn-block mybtn btn-primary tx-tfm">Iniciar Sesión </button>
                        </div>
                     </form>
                   </div>
@@ -36,5 +37,6 @@
         </div>
     </div>
   </div>   
+  
   
 
