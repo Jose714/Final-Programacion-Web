@@ -10,6 +10,7 @@
 #product .conte-all {
     width: 100%;
     margin: 0 auto;
+    position: absolute;
 }
 #product .conte-all .row_p {
     width: 70%;
@@ -28,7 +29,7 @@
 } 
 .box-prod {
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 22rem;
     margin-left: 14%;
     border-radius: 4px;
@@ -82,7 +83,6 @@
 	height: 30%;
 	line-height: 1.8rem;
 	display: block;
-    /*background: #3d99e8;*/
 }
 .box-prod .detalle-prod .p-detail{
     width: 90%;
@@ -118,7 +118,6 @@
     line-height: 2rem;
     display: block;
     bottom: 0;
-    position: absolute;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
@@ -141,7 +140,6 @@
     margin-left: 3rem;
 }
 .box-prod .ofert {
-    position: absolute;
     margin: 0;
     padding: 3px 5px;
     float: left;
@@ -153,7 +151,6 @@
     border-bottom-right-radius: 4px;
 }
 .box-prod .edit {
-    position: absolute;
     margin: 0;
     padding: 3px 7px;
     float: right;
@@ -277,12 +274,11 @@
 .titulo{
 background-color: #0072ce !important;
 padding: 10px 0 10px 0;
-position: relative;
 display: block;
 overflow: hidden;
-width: 80%;
-left: 10%;
+width: 100%;
 color: white;
+text-align: center;
 }
 .slider{
     width: 100%;
@@ -302,7 +298,16 @@ color: white;
 .slider img{
     width: 100%;
 }
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
 
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+}
 .list-product ul{
     list-style: none;
     left: 5%;
