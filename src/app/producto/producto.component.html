@@ -3,10 +3,9 @@
 <div class="modal-footer justify-content-center" style="width: 18rem;" *ngFor="let prod of herramientasElectricas" >
   <div class=" card-body text-center" >
     <h5 class="card-title" ><input type="hidden" #nombreProd value="{{prod}}">{{prod}}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="card-text">10% de Descuento</p>
     <h6><input type="hidden" #precioProd value="{{prec}}">{{prec}}</h6>
     <button type="button"  class="btn btn-primary" (click)="addToCar(nombreProd,precioProd)">Añadir al Carrito</button>
   </div>
 </div>
 </div>
-
