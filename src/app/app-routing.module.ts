@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProductoComponent } from './producto/producto.component';
-import { LoginComponent } from './login/login.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 
@@ -15,6 +14,7 @@ const routes: Routes = [
         component: ProductoComponent
     }
     ,
+
 
 
 ];

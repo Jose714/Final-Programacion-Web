@@ -10,7 +10,6 @@
 #product .conte-all {
     width: 100%;
     margin: 0 auto;
-    position: absolute;
 }
 #product .conte-all .row_p {
     width: 70%;
@@ -29,7 +28,7 @@
 } 
 .box-prod {
     position: relative;
-    width: 95%;
+
     height: 22rem;
     margin-left: 14%;
     border-radius: 4px;
@@ -83,6 +82,7 @@
 	height: 30%;
 	line-height: 1.8rem;
 	display: block;
+
 }
 .box-prod .detalle-prod .p-detail{
     width: 90%;
@@ -118,6 +118,7 @@
     line-height: 2rem;
     display: block;
     bottom: 0;
+
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
@@ -140,6 +141,7 @@
     margin-left: 3rem;
 }
 .box-prod .ofert {
+
     margin: 0;
     padding: 3px 5px;
     float: left;
@@ -297,16 +299,6 @@ text-align: center;
 }
 .slider img{
     width: 100%;
-}
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
 }
 .list-product ul{
     list-style: none;

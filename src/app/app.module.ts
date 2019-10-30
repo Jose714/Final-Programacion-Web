@@ -16,10 +16,12 @@ import { ProductoComponent } from './producto/producto.component';
     LoginComponent,
     NavigationComponent,
     ProductoComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
