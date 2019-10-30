@@ -10,6 +10,7 @@ import { ProductoComponent } from './producto/producto.component';
 import { ErrorComponent } from './error/error.component';
 import { CrearproductoComponent } from './crearproducto/crearproducto.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -22,7 +23,8 @@ import { CarritoComponent } from './carrito/carrito.component';
     ProductoComponent,
     ErrorComponent,
     CrearproductoComponent,
-    CarritoComponent
+    CarritoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
