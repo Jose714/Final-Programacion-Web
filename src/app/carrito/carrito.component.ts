@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class CarritoComponent implements OnInit {
 
 product = JSON.parse(localStorage.getItem("producto"));
+carrit = JSON.parse(localStorage.getItem("precio"));
   constructor(private router: Router) { }
 
   ngOnInit() {

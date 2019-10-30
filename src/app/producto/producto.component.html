@@ -1,5 +1,5 @@
 <h1 style="margin-top: 2em;" align="center">Productos Que Deseeas Comprar</h1>
-<div class="row justify-content-center " >
+<div class="row justify-content-center " *ngFor="let prec of precio">
 <div class="modal-footer justify-content-center" style="width: 18rem;" *ngFor="let prod of herramientasElectricas" >
   <div class=" card-body text-center" >
     <h5 class="card-title" ><input type="hidden" #nombreProd value="{{prod}}">{{prod}}</h5>
@@ -9,4 +9,5 @@
   </div>
 </div>
 </div>
+
 
