@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {LoginService} from "../services/login.service";
 
 @Component({
   selector: 'app-login',
@@ -20,7 +19,7 @@ export class LoginComponent implements OnInit {
     if (validarEmail==this.email[0] && validarPass) {
       localStorage.setItem("email",JSON.stringify(this.email[0]));
       this.user=JSON.parse(localStorage.getItem("email"));
-      this.router.navigate(["users"]);
+      this.router.navigate(["productos"]);
 
 
     }
