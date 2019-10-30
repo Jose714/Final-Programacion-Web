@@ -112,11 +112,11 @@ footer{
     margin: auto;
 }
 
-@media screen and (max-diwdht: 1100px){
+@media screen and (max-width: 1100px){
     .container-body{
         flex-wrap: wrap;
     }
-.column1{
+ .column1{
     max-width: 100%;
 }
 
