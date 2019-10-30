@@ -1,1 +1,27 @@
-<p>crearproducto works!</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container" id="registration-form">
+  <div class="frm">
+    <h1>Nuevo Producto</h1>
+    <form>
+      <div class="form-group">
+        <label for="username">Nombre del Producto</label>
+        <input type="text" class="form-control" id="username" placeholder="Nombre del Producto" #nombre>
+      </div>
+      <div class="form-group">
+        <label for="email">Precio</label>
+        <input type="email" class="form-control" id="email" placeholder="Precio Del Producto" #precio>
+      </div>
+
+      <div class="form-group">
+        <button  class="btn btn-success btn-lg" (click)="crearProducto(nombre,precio)">Crear</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<br>
