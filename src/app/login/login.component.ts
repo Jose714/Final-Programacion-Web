@@ -1,41 +1,48 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Router, RouterModule } from '@angular/router';
-import { NavigationComponent } from '../navigation/navigation.component';
-import { Location } from '@angular/common'
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
-
-
 })
 export class LoginComponent implements OnInit {
+  email: String[]=['elbichocr714@gmail.com','elkaizer@gmail.com'];
+  password:String="asd$123";
+  user;
 
-  constructor(private _router: Router) {
+  iniciarSesion(nameEmail,nPass){
 
-  }
+    let validarEmail=nameEmail.value;
+    let validarPass=nPass.value;
+    //login para el usuario administrador
+    if (validarEmail==this.email[0] && validarPass) {
+      localStorage.setItem("email",JSON.stringify(this.email[0]));
+      this.user=JSON.parse(localStorage.getItem("email"));
+      this.router.navigate(["crearproducto"]);
 
-  email: String = 'final@gmail.com';
-  password: String = "asd$123";
 
-  iniciarSesion(correo, clave) {
-    let validarEmail = correo.value;
-    let validarPass = clave.value;
+    }
+    //login para el usuario comun
+    else if (validarEmail==this.email[1] && validarPass) {
+      localStorage.setItem("email",JSON.stringify(this.email[1]));
+      this.user=JSON.parse(localStorage.getItem("email"));
+      this.router.navigate(["users"]);
 
-    if (validarEmail == this.email && validarPass == this.password) {
-      this._router.navigate(['navigation']);
-      console.log("iniciando sesion");
 
-    } else {
-      console.log("error: ingrese bien los datos");
+    }else{
+      this.router.navigate(["error"]);
     }
   }
 
+  constructor(private router: Router) {
+
+   }
 
   ngOnInit() {
 
   }
+
+
+
 }

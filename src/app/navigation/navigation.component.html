@@ -1,22 +1,21 @@
+
 <header class="header">
         <div class="container logo-nav-container">
             <a href="#" class="logo"> <img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/logo.png" alt=""></a>
-
-            <span class="menu-icon"><img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/menu.png" alt=""></span>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <span class="menu-icon"><img src="menu.png" alt=""></span>
             <nav class="navigation">
                 <ul>
-                    <li> <a routerLink="/productos" class="nav-link" >Inicio<span class="sr-only">(current)</span></a></li>
+                    <li> <a class="navbar-brand" href="http://localhost:4200/productos">Inicio</a></li>
+                    <li *ngIf="user == 'elkaizer@gmail.com'"> <a routerLink="/productos" class="nav-link" >Productos<span class="sr-only">(current)</span></a></li>
+                  <li *ngIf="user == 'elbichocr714@gmail.com'"> <a routerLink="/crearproducto" class="nav-link" >Nuevo Producto<span class="sr-only">(current)</span></a></li>
                     <li> <a class="nav-link" routerLink="/login">Iniciar sesion</a></li>
-                    <li> <a href="#"><img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/carrito.png" alt=""></a></li>
-                </ul>
+                    <li> <a class="nav-link" routerLink="/login">{{user}}</a></li>
+
+                  <li *ngIf="user"> <a class="nav-link" routerLink="/login" ><button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="cerrarSesion()">Cerrar Sesion</button></a></li>
+
+                    <li> <a routerLink="/carrito"><img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/carrito.png" alt="" ></a></li>
+            </ul>
             </nav>
         </div>
-       
-</header>
-<body>
-    <app-producto></app-producto>
-</body>
+        
+    </header>

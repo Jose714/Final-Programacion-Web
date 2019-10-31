@@ -1,7 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <body>
-
     <div class="body">
         <div class="slider">
             <ul>
@@ -13,10 +12,6 @@
                 </li>
             </ul>
         </div>
-
-
-
-
         <h1 class="titulo">Ferreteria y Herramientas</h1>
         <br>
         <div class="conte-all">
@@ -36,8 +31,8 @@
                                     <span class="precio">$331.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="2">Ver más</a>
-                                    <a class="love" value="2"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -57,8 +52,8 @@
                                     <span class="precio">$379.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="4">Ver más</a>
-                                    <a class="love" value="4"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -78,8 +73,8 @@
                                     <span class="precio">$2.279.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="6">Ver más</a>
-                                    <a class="love" value="6"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -99,8 +94,8 @@
                                     <span class="precio">$279.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="8">Ver más</a>
-                                    <a class="love" value="8"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -121,8 +116,8 @@
                                     <span class="precio">$1.650.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="8">Ver más</a>
-                                    <a class="love" value="8"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
 
@@ -145,8 +140,8 @@
                                     <span class="precio">$580.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="2">Ver más</a>
-                                    <a class="love" value="2"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -167,8 +162,8 @@
                                     <span class="precio">$340.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="2">Ver más</a>
-                                    <a class="love" value="2"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -188,8 +183,8 @@
                                     <span class="precio">$890.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="2">Ver más</a>
-                                    <a class="love" value="2"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -209,8 +204,8 @@
                                     <span class="precio">$169.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="2">Ver más</a>
-                                    <a class="love" value="2"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
@@ -230,17 +225,234 @@
                                     <span class="precio">$169.900 c/u</span>
                                 </div>
                                 <div class="option">
-                                    <a class="view_det" value="2">Ver más</a>
-                                    <a class="love" value="2"></a>
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
                                 </div>
                             </div>
                             <span class="ofert">Oferta</span>
                         </div>
                     </li>
                 </ul>
+                <ul>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Fresadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Fresadora</b>
+                                    <span class="precio">$580.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Destornilladores-Eléctricos.png">
+
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Destornilladores Electricos</b>
+                                    <span class="precio">$340.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Soldador.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Soldador</b>
+                                    <span class="precio">$890.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Taladro.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Taladro</b>
+                                    <span class="precio">$169.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Tronzadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Tronzadora</b>
+                                    <span class="precio">$169.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Fresadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Fresadora</b>
+                                    <span class="precio">$580.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Destornilladores-Eléctricos.png">
+
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Destornilladores Electricos</b>
+                                    <span class="precio">$340.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Soldador.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Soldador</b>
+                                    <span class="precio">$890.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Taladro.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Taladro</b>
+                                    <span class="precio">$169.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Tronzadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Tronzadora</b>
+                                    <span class="precio">$169.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                </ul>
+
             </div>
         </div>
-
     </div>
 </body>
+
 <router-outlet></router-outlet>
