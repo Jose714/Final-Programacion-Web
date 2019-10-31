@@ -10,6 +10,10 @@ import { ProductoComponent } from './producto/producto.component';
 import { ErrorComponent } from './error/error.component';
 import { CrearproductoComponent } from './crearproducto/crearproducto.component';
 import { CarritoComponent } from './carrito/carrito.component';
+<<<<<<< HEAD
+=======
+import { FooterComponent } from './footer/footer.component';
+>>>>>>> 7a719f8569e9ee918d340c291f53fda9fffcba62
 
 
 
@@ -22,7 +26,12 @@ import { CarritoComponent } from './carrito/carrito.component';
     ProductoComponent,
     ErrorComponent,
     CrearproductoComponent,
+<<<<<<< HEAD
     CarritoComponent
+=======
+    CarritoComponent,
+    FooterComponent
+>>>>>>> 7a719f8569e9ee918d340c291f53fda9fffcba62
   ],
   imports: [
     BrowserModule,

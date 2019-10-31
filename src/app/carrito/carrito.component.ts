@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./carrito.component.css']
 })
 export class CarritoComponent implements OnInit {
+<<<<<<< HEAD
   
   msg: string = '';
   produc = [];
@@ -42,6 +43,12 @@ Comprar(){
 
 
 
+=======
+
+product = JSON.parse(localStorage.getItem("producto"));
+  constructor(private router: Router) { }
+
+>>>>>>> 7a719f8569e9ee918d340c291f53fda9fffcba62
   ngOnInit() {
   }
 
