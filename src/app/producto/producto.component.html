@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <body>
@@ -457,16 +456,3 @@
 </body>
 
 <router-outlet></router-outlet>
-=======
-<h1 style="margin-top: 2em;" align="center">Productos Que Deseeas Comprar</h1>
-<div class="row justify-content-center " >
-<div class="modal-footer justify-content-center" style="width: 18rem;" *ngFor="let prod of herramientasElectricas" >
-  <div class=" card-body text-center" >
-    <h5 class="card-title" ><input type="hidden" #nombreProd value="{{prod}}">{{prod}}</h5>
-    <p class="card-text">10% de Descuento</p>
-    <h6><input type="hidden" #precioProd value="{{prec}}">{{prec}}</h6>
-    <button type="button"  class="btn btn-primary" (click)="addToCar(nombreProd,precioProd)">Añadir al Carrito</button>
-  </div>
-</div>
-</div>
->>>>>>> 7a719f8569e9ee918d340c291f53fda9fffcba62

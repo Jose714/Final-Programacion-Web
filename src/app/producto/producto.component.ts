@@ -7,13 +7,27 @@ import { Router } from '@angular/router';
   styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
-<<<<<<< HEAD
-  
   herramientasElectricas: String[] = ['Sierras', 'Ruteadoras', 'Pulidora', 'Pistola de Calor', 'Llaves de Impacto', 'Fresadoras', 'Destornilladores Electricos',
-    'soldador', 'taladro', 'Tronzadoras',];
+    'soldador', 'taladro', 'Tronzadoras', 'Amoladora', 'Bailejo', 'Barra', 'Champeadora', 'Cizalla'];
+  precio: String[] = ['50.000', '79.000', '85.000', '210.000', '94.000', '101.000', '77.000', '130.000', '150.000', '180.000', '111.000', '122.000', '133.000']
+  producto;
+  addToCar(nombreProd, precioProd) {
+    let nombreProducto = nombreProd.value;
+    let precioProducto = precioProd.value;
+    for (let index = 0; index < this.herramientasElectricas.length; index++) {
+      if (this.herramientasElectricas[index] == nombreProducto) {
+        localStorage.setItem("producto", JSON.stringify(this.herramientasElectricas[index]));
+        this.router.navigate(["carrito"])
+      }
 
-  addToCar() {
+    }
+    for (let index = 0; index < this.precio.length; index++) {
+      if (this.precio[index] == precioProducto) {
+        localStorage.setItem("precio", JSON.stringify(this.precio[index]));
+        this.router.navigate(["carrito"])
+      }
 
+    }
     if (this.herramientasElectricas[0] === "Sierras") {
       alert("Compraste " + this.herramientasElectricas[0]);
 
@@ -45,36 +59,11 @@ export class ProductoComponent implements OnInit {
       alert("Compraste " + this.herramientasElectricas[9]);
     }
 
-=======
-  herramientasElectricas: String[]=['Destornilladores Electricos','Llaves de Impacto',
-  'Pulidora','Pistola de Calor','Tronzadoras','Sierras','Fresadoras','Ruteadoras','Amoladora','Bailejo','Barra','Champeadora','Cizalla'];
-  precio: String[] = ['50.000','79.000','85.000','210.000','94.000','101.000','77.000','130.000','150.000','180.000','111.000','122.000','133.000']
-  producto;
-
-  addToCar(nombreProd,precioProd){
-    let nombreProducto= nombreProd.value;
-    let precioProducto = precioProd.value;
-      for (let index = 0; index < this.herramientasElectricas.length; index++) {
-        if (this.herramientasElectricas[index]==nombreProducto) {
-          localStorage.setItem("producto",JSON.stringify(this.herramientasElectricas[index]));
-          this.router.navigate(["carrito"])
-        }
-        
-      }
-      for (let index = 0; index < this.precio.length; index++) {
-        if (this.precio[index]==precioProducto) {
-          localStorage.setItem("precio",JSON.stringify(this.precio[index]));
-          this.router.navigate(["carrito"])
-        }
-        
-      }
-     
->>>>>>> 7a719f8569e9ee918d340c291f53fda9fffcba62
 
   }
 
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
