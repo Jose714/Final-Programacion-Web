@@ -19,7 +19,8 @@ export class LoginComponent implements OnInit {
     if (validarEmail==this.email[0] && validarPass) {
       localStorage.setItem("email",JSON.stringify(this.email[0]));
       this.user=JSON.parse(localStorage.getItem("email"));
-      this.router.navigate(["crearproducto"]);
+      this.router.navigate(["http://localhost:4200/"]);
+     
 
 
     }
