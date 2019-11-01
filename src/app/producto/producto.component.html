@@ -1,11 +1,457 @@
-<h1 style="margin-top: 2em;" align="center">Productos Que Deseeas Comprar</h1>
-<div class="row justify-content-center " >
-<div class="modal-footer justify-content-center" style="width: 18rem;" *ngFor="let prod of herramientasElectricas" >
-  <div class=" card-body text-center" >
-    <h5 class="card-title" ><input type="hidden" #nombreProd value="{{prod}}">{{prod}}</h5>
-    <p class="card-text">10% de Descuento</p>
-    <h6><input type="hidden" #precioProd value="{{prec}}">{{prec}}</h6>
-    <button type="button"  class="btn btn-primary" (click)="addToCar(nombreProd,precioProd)">Añadir al Carrito</button>
-  </div>
-</div>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<body>
+    <div class="body">
+        <div class="slider">
+            <ul>
+                <li><img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/banner4.png">
+                </li>
+                <li><img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/banner1.png">
+                </li>
+                <li><img src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/banner2.png">
+                </li>
+            </ul>
+        </div>
+        <h1 class="titulo">Ferreteria y Herramientas</h1>
+        <br>
+        <div class="conte-all">
+            <div class="list-product">
+                <ul>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Sierra.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Sierra</b>
+                                    <span class="precio">$331.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="4">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/ruteadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Ruteadora</b>
+                                    <span class="precio">$379.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="6">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Pulidora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Pulidora</b>
+                                    <span class="precio">$2.279.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="8">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Pistola-de-calor.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Pistola de Calor</b>
+                                    <span class="precio">$279.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="8">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Llave-de-impactp.png">
+
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Llave de Impacto</b>
+                                    <span class="precio">$1.650.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Fresadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Fresadora</b>
+                                    <span class="precio">$580.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Destornilladores-Eléctricos.png">
+
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Destornilladores Electricos</b>
+                                    <span class="precio">$340.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Soldador.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Soldador</b>
+                                    <span class="precio">$890.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Taladro.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Taladro</b>
+                                    <span class="precio">$169.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://www.unac.edu.co/educacioncontinua/wp-content/uploads/2019/10/Tronzadora.png">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Tronzadora</b>
+                                    <span class="precio">$169.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/362812?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Tornillero</b>
+                                    <span class="precio">$699.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/362821?$lista175$">
+
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Canasta</b>
+                                    <span class="precio">$29.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/444136?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Calibrador de Brocas</b>
+                                    <span class="precio">$59.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/188750?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Mezcladora</b>
+                                    <span class="precio">$919.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/150715?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Regla Vibratoria</b>
+                                    <span class="precio">$10.229.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/347742?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Revocadora</b>
+                                    <span class="precio">$924.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/303647?$lista175$">
+
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Vibrocompactadora</b>
+                                    <span class="precio">$4.093.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/226874?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Flotacanal</b>
+                                    <span class="precio">$1.319.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/361094?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Cadena 42 dientes</b>
+                                    <span class="precio">$79.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prod">
+                            <div class="img-prod">
+                                <a class="view_det" value="2">
+                                    <img
+                                        src="https://homecenterco.scene7.com/is/image//SodimacCO/281438?$lista175$">
+                                </a>
+                            </div>
+                            <div class="detalle-prod">
+                                <div class="p-detail">
+                                    <b class="name-prod">Motosierra</b>
+                                    <span class="precio">$829.900 c/u</span>
+                                </div>
+                                <div class="option">
+                                    <button class="btn btn-block mybtn btn-success tx-tfm"
+                                        (click)="addToCar()">Comprar</button>
+                                </div>
+                            </div>
+                            <span class="ofert">Oferta</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<router-outlet></router-outlet>

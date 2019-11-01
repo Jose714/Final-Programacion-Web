@@ -1,10 +1,22 @@
+<h1 style="margin-top: 5em;" align="center"> </h1>
 
-<h1 style="margin-top: 5em;" align="center">Productos en el Carrito</h1>
-<div class="row justify-content-center " align="center">
-        <div class="card modal-content" style="width: 18rem;" >
-          <div class="card-body ">
-            <h5 class="card-title" ><input type="hidden" #nombreProd value="{{prod}}">{{product}}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button type="button"  class="btn btn-primary" (click)="addToCar(nombreProd)">Comprar</button>
-          </div>
-        </div>
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Finalizar Comprar</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" >
+      <p>Productos a Comprar: </p>
+    </div>
+
+    <div class="modal-footer">
+      <button style="margin-left: 10px" type="button" class="btn btn-primary" (click)="Comprar()">Comprar</button>
+      
+      <button style="margin-left: 10px" type="button" class="btn btn-primary" (click)="Cancelar()">Cancelar</button>
+    </div>
+
+  </div>
+</div>
