@@ -209,6 +209,19 @@
     left: 0;
     font-family: sans-serif;
     color: white;
+    color: white;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    text-align: center;
+}
+.box-prod .ofert {
+    position: absolute;
+    margin: 0;
+    padding: 3px 5px;
+    float: left;
+    left: 0;
+    font-family: sans-serif;
+    color: white;
     font-size: 15px;
     background: #f17474;
     border-bottom-right-radius: 4px;
@@ -317,3 +330,9 @@ text-align: center;
     70% {margin-left: -200%;}
 }
 
+.list-product ul{
+    list-style: none;
+    left: 5%;
+    position: relative;
+    display: flex;
+}
