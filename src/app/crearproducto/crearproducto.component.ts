@@ -7,18 +7,22 @@ import {Router} from "@angular/router";
   styleUrls: ['./crearproducto.component.css']
 })
 export class CrearproductoComponent implements OnInit {
-  nombreP;
+  nombreP:String[]=new Array;
 
   crearProducto(nombre,precio){
     let nombreProducto = nombre.value;
-    //this.nombreP.push(nombre.value);
-    //this.precioP.push(precio.value);
-     localStorage.setItem("nombre",JSON.stringify(nombreProducto));
-    this.nombreP.push(nombreProducto);
-    this.nombreP = JSON.parse(localStorage.getItem("nombre"));
-    this.router.navigate(["productos"]);
-  }
+    let precioProducto = precio.value;
 
+      let aux = localStorage.setItem("nombre",JSON.stringify(nombreProducto));
+      localStorage.setItem("precio",JSON.stringify(precioProducto));
+
+     this.nombreP.push(nombre.value);
+     
+     console.log(this.nombreP)
+     this.router.navigate(["crearproducto"]);
+      
+  
+  }
 
   constructor(private router:Router) { }
 

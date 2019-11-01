@@ -6,6 +6,7 @@ import { ErrorComponent } from './error/error.component';
 import { UsersComponent } from './users/users.component';
 import {CrearproductoComponent} from "./crearproducto/crearproducto.component";
 import { CarritoComponent } from './carrito/carrito.component';
+import { LonuevoComponent } from './lonuevo/lonuevo.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   ,
   {
     path: 'carrito', component: CarritoComponent
+  }
+  ,
+  {
+    path: 'lo-nuevo', component: LonuevoComponent
   }
 ];
 
